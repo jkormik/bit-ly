@@ -17,7 +17,7 @@ You will recieve a Generic Access Token wich will look something like that "1234
 
 Put this token inside quotation marks in a file .env:
 ```
-BITLY_OAUTHACCESSTOKEN="6e2a0ee7011166b05356f944dd82dfc2725bf50a"
+BITLY_OAUTHACCESSTOKEN="123456789009876543212345678909875zxdt876"
 ```
 
 Python3 should be already installed. 
