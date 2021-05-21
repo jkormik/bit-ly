@@ -4,7 +4,7 @@ import urllib
 from dotenv import load_dotenv
 import argparse
 
-def ShortenLink(token, url):
+def shorten_link(token, url):
   headers = {
     "Authorization": f"Bearer {token}"
   }
@@ -21,7 +21,7 @@ def ShortenLink(token, url):
   return response.json()["id"]
 
 
-def CountClicks(token, url):
+def count_clicks(token, url):
   headers = {
     "Authorization": f"Bearer {token}"
   }
@@ -41,7 +41,7 @@ def CountClicks(token, url):
   return clicks_count
 
 
-def IsBitlink(token, url):
+def is_bitlink(token, url):
   headers = {
     "Authorization": f"Bearer {token}"
   }
@@ -54,7 +54,7 @@ def IsBitlink(token, url):
   return response.ok
 
 
-def CreateParser():
+def create_parser():
   parser = argparse.ArgumentParser()
   parser.add_argument("name")
 
@@ -65,16 +65,16 @@ def main():
   load_dotenv()
   bitly_token = os.environ["BITLY_OAUTHACCESSTOKEN"]
 
-  parser = CreateParser()
+  parser = create_parser()
   args = parser.parse_args()
 
   source_url = args.name
 
   try:
-    if IsBitlink(bitly_token, source_url):
-      print("Количество переходов по ссылке битли", CountClicks(bitly_token, source_url))
+    if is_bitlink(bitly_token, source_url):
+      print("Количество переходов по ссылке битли", count_clicks(bitly_token, source_url))
     else:
-      shortened_link = ShortenLink(bitly_token, source_url)
+      shortened_link = shorten_link(bitly_token, source_url)
       print(shortened_link)
   except requests.exceptions.HTTPError:
     print("Ссылка введена неверно")
