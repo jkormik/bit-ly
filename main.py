@@ -66,9 +66,9 @@ def main():
   bitly_token = os.environ["BITLY_OAUTHACCESSTOKEN"]
 
   parser = createparser()
-  namespace = parser.parse_args()
+  args = parser.parse_args()
 
-  source_url = namespace.name
+  source_url = args.name
 
   try:
     if is_bitlink(bitly_token, source_url):
