@@ -56,7 +56,7 @@ def is_bitlink(token, url):
 
 def createparser():
   parser = argparse.ArgumentParser()
-  parser.add_argument("name", nargs="?")
+  parser.add_argument("name")
 
   return parser
 
