@@ -27,13 +27,25 @@ pip install -r requirements.txt
 ```
 ### How to use
 
-'''
+```
 python main.py https://google.com 
 bit.ly/3aLVRLu
 
 python main.py https://bit.ly/3aLVRLu
 Количество переходов по ссылке битли 4
-'''
+
+python main.py --help
+usage: Bitly shorterer [-h] name
+
+It is a console programm for fast shortening of long knotty urls based on a Bitly API, which also can give
+you an information about a sum of clicks on your bitlinks.
+
+positional arguments:
+  name        Link to shorten or bitlink to get sum of clicks
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
 
 ### Project Goals
 
