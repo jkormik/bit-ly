@@ -33,8 +33,7 @@ def count_clicks(token, url):
 
     parsed = urllib.parse.urlparse(url)
 
-    url = f"https://api-ssl.bitly.com/\
-            v4/bitlinks/{parsed.netloc}{parsed.path}/clicks/summary"
+    url = f"https://api-ssl.bitly.com/v4/bitlinks/{parsed.netloc}{parsed.path}/clicks/summary"
 
     response = requests.get(url, headers=headers, params=payload)
     response.raise_for_status()

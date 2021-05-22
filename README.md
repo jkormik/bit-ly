@@ -4,7 +4,7 @@ It is a console programm for fast shortening of long knotty urls based on a Bitl
 
 ### How to install
 
-You will need to sign in bitly.com (free account is ehough) and get a Generic Access Token.
+You will need to sign in [bitly.com](https://bitly.com) (free account is ehough) and get a Generic Access Token.
 
 Generic Access Token is generated in a dashboard of your account.
 
@@ -25,6 +25,15 @@ Then use `pip` (or `pip3`, if there is a conflict with Python2) to install depen
 ```
 pip install -r requirements.txt
 ```
+### How to use
+
+'''
+python main.py https://google.com 
+bit.ly/3aLVRLu
+
+python main.py https://bit.ly/3aLVRLu
+Количество переходов по ссылке битли 4
+'''
 
 ### Project Goals
 
