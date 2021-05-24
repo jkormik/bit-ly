@@ -4,7 +4,7 @@ It is a console programm for fast shortening of long knotty urls based on a Bitl
 
 ### How to install
 
-You will need to sign in [bitly.com](https://bitly.com) (free account is ehough) and get a Generic Access Token.
+You will need to sign in bitly.com (free account is ehough) and get a Generic Access Token.
 
 Generic Access Token is generated in a dashboard of your account.
 
