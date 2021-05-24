@@ -1,4 +1,4 @@
-# Bitly url shorterer
+# Bitly url shortener
 
 It is a console programm for fast shortening of long knotty urls based on a Bitly API, which also can give you an information about a sum of clicks on your bitlinks.
 
