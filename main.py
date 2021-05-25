@@ -58,9 +58,9 @@ def is_bitlink(token, url):
 
 def create_parser():
     parser = argparse.ArgumentParser(
-                                    prog="Bitly shorterer",
+                                    prog="Bitly shortener",
                                     description="It is a console \
-                                    programm for fast shortening of \
+                                    program for fast shortening of \
                                     long knotty urls based on a Bitly \
                                     API, which also can give you an \
                                     information about a sum of clicks \
