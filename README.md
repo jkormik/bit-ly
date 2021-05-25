@@ -1,6 +1,6 @@
 # Bitly url shortener
 
-It is a console programm for fast shortening of long knotty urls based on a Bitly API, which also can give you an information about a sum of clicks on your bitlinks.
+It is a console program for fast shortening of long knotty urls based on a Bitly API, which also can give you an information about a sum of clicks on your bitlinks.
 
 ### How to install
 
