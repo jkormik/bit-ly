@@ -35,9 +35,9 @@ python main.py https://bit.ly/3aLVRLu
 Количество переходов по ссылке битли 4
 
 python main.py --help
-usage: Bitly shorterer [-h] name
+usage: Bitly shortener [-h] name
 
-It is a console programm for fast shortening of long knotty urls based on a Bitly API, which also can give
+It is a console program for fast shortening of long knotty urls based on a Bitly API, which also can give
 you an information about a sum of clicks on your bitlinks.
 
 positional arguments:
